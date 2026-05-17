@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'backdrop-blur-xl bg-navy/90 border-b border-blue-accent/20 top-0 py-4' : 'bg-transparent py-6 top-[37px] md:top-[37px]'}`}>
+    <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'backdrop-blur-xl bg-navy/90 border-b border-blue-accent/20 top-0 py-4' : 'bg-transparent py-6 top-0 md:top-[37px]'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 z-50">

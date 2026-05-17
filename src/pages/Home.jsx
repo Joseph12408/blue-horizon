@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       {/* Section 1 — Hero */}
-      <section className="relative min-h-screen bg-navy flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen bg-navy flex items-center justify-center overflow-hidden pt-32 md:pt-20">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-accent/20 via-navy to-navy opacity-50"></div>
           <div className="absolute inset-0 bg-[url('https://bluehorizoncontainers.com/wp-content/uploads/2024/09/hero-bg.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
@@ -50,16 +50,7 @@ const Home = () => {
           </motion.div>
         </div>
 
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce text-text-muted hover:text-blue-accent cursor-pointer"
-          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
-        >
-          <span className="text-xs uppercase tracking-widest mb-2">Scroll</span>
-          <ChevronDown size={24} />
-        </motion.div>
+
       </section>
 
       {/* Section 2 — Global Reach */}

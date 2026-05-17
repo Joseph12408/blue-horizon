@@ -36,8 +36,8 @@ const Footer = () => {
         <div>
           <h4 className="font-display text-xl uppercase tracking-wider mb-6">Contact Us</h4>
           <ul className="space-y-3 text-text-muted text-sm">
-            <li><strong>Phone:</strong> <a href="tel:+15403841819" className="hover:text-blue-accent">+1 540 384 1819</a></li>
-            <li><strong>Email:</strong> <a href="mailto:info@bluehorizoncontainers.com" className="hover:text-blue-accent">info@bluehorizoncontainers.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+14195452428" className="hover:text-blue-accent">+1(419) 545-2428</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@bluehorizoncontainerss.com" className="hover:text-blue-accent">info@bluehorizoncontainerss.com</a></li>
             <li><strong>Hours:</strong> Mon - Fri: 8:00 AM - 6:00 PM</li>
           </ul>
         </div>
