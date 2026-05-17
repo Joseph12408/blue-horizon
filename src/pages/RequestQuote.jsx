@@ -36,9 +36,9 @@ const RequestQuote = () => {
                   
                   <div className="bg-navy-light px-8 py-6 rounded-xl border border-white/5">
                     <p className="text-sm text-text-muted mb-2">Need immediate assistance?</p>
-                    <a href="tel:+15403841819" className="flex items-center justify-center space-x-2 text-blue-accent font-bold text-xl hover:text-white transition-colors">
+                    <a href="tel:+14195452428" className="flex items-center justify-center space-x-2 text-blue-accent font-bold text-xl hover:text-white transition-colors">
                       <Phone size={20} />
-                      <span>+1 540 384 1819</span>
+                      <span>+1 (419) 545-2428</span>
                     </a>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const RequestQuote = () => {
           </div>
           
           <div className="text-center mt-8 text-text-muted">
-            <p>Or call us directly at <a href="tel:+15403841819" className="text-blue-accent hover:underline">+1 540 384 1819</a></p>
+            <p>Or call us directly at <a href="tel:+14195452428" className="text-blue-accent hover:underline">+1 (419) 545-2428</a></p>
           </div>
         </div>
       </SectionWrapper>
