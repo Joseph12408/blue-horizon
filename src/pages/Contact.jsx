@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PageHero from '../components/PageHero';
 import SectionWrapper from '../components/SectionWrapper';
 import { Phone, Mail, Clock, MapPin, CheckCircle2 } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+import StructuredData from '../components/StructuredData';
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState('idle'); // idle, submitting, success
@@ -14,8 +16,26 @@ const Contact = () => {
     }, 1000);
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Blue Horizon Containers",
+    "url": "https://bluehorizoncontainerss.com/contact",
+    "telephone": "+14195452428",
+    "email": "info@bluehorizoncontainerss.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Global Headquarters"
+    }
+  };
+
   return (
     <div>
+      <Helmet>
+        <title>Contact Us | Blue Horizon Containers</title>
+        <meta name="description" content="Get in touch with Blue Horizon Containers. Contact our team for shipping containers, logistics, and global transport inquiries." />
+      </Helmet>
+      <StructuredData data={localBusinessSchema} />
       <PageHero title="Contact Us" breadcrumbs={['Home', 'Contact']} />
 
       <SectionWrapper className="bg-navy">

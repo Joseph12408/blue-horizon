@@ -3,10 +3,15 @@ import PageHero from '../components/PageHero';
 import SectionWrapper from '../components/SectionWrapper';
 import StatCounter from '../components/StatCounter';
 import { Target, Eye, Shield, Users, Zap, Award } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About Us | Blue Horizon Containers</title>
+        <meta name="description" content="Learn about Blue Horizon Containers. Over 30 years of experience providing high-quality shipping containers and complete supply chain solutions." />
+      </Helmet>
       <PageHero title="About Us" breadcrumbs={['Home', 'About Us']} />
 
       <SectionWrapper className="bg-navy">

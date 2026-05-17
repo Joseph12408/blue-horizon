@@ -5,10 +5,32 @@ import { CheckCircle2, ChevronDown, Clock, ShieldCheck, Headset, ArrowRight, Bra
 import SectionWrapper from '../components/SectionWrapper';
 import StatCounter from '../components/StatCounter';
 import TestimonialSlider from '../components/TestimonialSlider';
+import { Helmet } from 'react-helmet-async';
+import StructuredData from '../components/StructuredData';
 
 const Home = () => {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Blue Horizon Containers",
+    "image": "https://bluehorizoncontainers.com/wp-content/uploads/2024/09/hero-bg.jpg",
+    "url": "https://bluehorizoncontainerss.com",
+    "telephone": "+14195452428",
+    "email": "info@bluehorizoncontainerss.com",
+    "description": "Affordable Shipping Containers & Complete Logistics Solutions across the globe. We provide high-quality containers for storage, transport, and custom fabrication.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Global Headquarters"
+    }
+  };
+
   return (
     <div>
+      <Helmet>
+        <title>Blue Horizon Containers | Shipping Containers for Sale & Logistics</title>
+        <meta name="description" content="Buy high-quality new, used, and refurbished shipping containers globally. Complete logistics, transport, and warehousing solutions." />
+      </Helmet>
+      <StructuredData data={localBusinessSchema} />
       {/* Section 1 — Hero */}
       <section className="relative min-h-screen bg-navy flex items-center justify-center overflow-hidden pt-32 md:pt-20">
         <div className="absolute inset-0 z-0">

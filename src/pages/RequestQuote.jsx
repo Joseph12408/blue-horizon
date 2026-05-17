@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PageHero from '../components/PageHero';
 import SectionWrapper from '../components/SectionWrapper';
 import { CheckCircle2, Phone } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const RequestQuote = () => {
   const [formStatus, setFormStatus] = useState('idle');
@@ -16,6 +17,10 @@ const RequestQuote = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Request a Quote | Blue Horizon Containers</title>
+        <meta name="description" content="Request a free quote for shipping containers and logistics services from Blue Horizon Containers. Fast response and competitive pricing." />
+      </Helmet>
       <PageHero title="Request a Free Quote" breadcrumbs={['Home', 'Request Quote']} />
 
       <SectionWrapper className="bg-navy pb-32">
