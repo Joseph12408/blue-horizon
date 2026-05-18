@@ -54,7 +54,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Your trusted partner in global logistics, offering premium new, used, and refurbished shipping containers alongside comprehensive supply chain solutions.
+            Blue Horizon Containers is a global logistics provider specializing in high-quality new, used, and refurbished shipping containers. We offer comprehensive supply chain solutions including ocean freight, container sales, and smart warehousing.
           </motion.p>
           
           <motion.div 
@@ -127,9 +127,9 @@ const Home = () => {
       {/* Section 4 — Stats Bar */}
       <SectionWrapper className="bg-navy-light py-16 border-y border-blue-accent/10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <StatCounter end={6000} suffix="+" label="Ocean Freight" />
-          <StatCounter end={1000} suffix="+" label="Monthly Container Repairs" />
-          <StatCounter end={1000000} label="sqm Smart Warehouses" />
+          <StatCounter end={6000} suffix="+" label="Ocean Freight Operations Annually" />
+          <StatCounter end={1000} suffix="+" label="Container Repairs Completed Monthly" />
+          <StatCounter end={1000000} label="Square Meters of Smart Warehousing" />
         </div>
       </SectionWrapper>
 

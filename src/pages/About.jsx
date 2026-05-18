@@ -25,7 +25,7 @@ const About = () => {
                 Founded over 30 years ago, Blue Horizon Containers began with a simple mission: to provide high-quality, durable shipping containers to businesses worldwide. What started as a small local depot has grown into a global logistics powerhouse.
               </p>
               <p>
-                Today, we operate in over 20 major ports globally, offering not just container sales, but comprehensive supply chain solutions including transport, smart warehousing, and custom container fabrication.
+                Blue Horizon Containers is a premier global logistics provider. We operate in over 20 major ports globally, offering comprehensive supply chain solutions including container sales, transport logistics, smart warehousing, and custom container fabrication.
               </p>
               <p>
                 Our commitment to quality, innovation, and customer satisfaction remains the driving force behind everything we do.
@@ -94,9 +94,9 @@ const About = () => {
 
       <SectionWrapper className="bg-navy-light border-y border-blue-accent/10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <StatCounter end={30} suffix="+" label="Years Experience" />
-          <StatCounter end={500} suffix="+" label="Global Partners" />
-          <StatCounter end={99} suffix="%" label="Customer Satisfaction" />
+          <StatCounter end={30} suffix="+" label="Years of Industry Experience" />
+          <StatCounter end={500} suffix="+" label="Global Logistics Partners" />
+          <StatCounter end={99} suffix="%" label="Documented Customer Satisfaction" />
         </div>
       </SectionWrapper>
     </div>
